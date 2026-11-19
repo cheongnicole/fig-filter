@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fig &amp; Filter — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Fig &amp; Filter</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <img src="images/hero-espresso-pour.jpg" alt="Espresso pouring from the portafilter into a white cup at the Fig & Filter counter">
+          <div class="hero-body">
+            <h1 class="hero-title">Fig &amp; Filter</h1>
+            <p class="hero-tagline">Roasted here. Baked here. Poured for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="essentials">
+          <p>Open Tuesday to Sunday, 7:30am – 5:00pm · 8 Chalk Lane ·</p>
+          <a class="btn btn-primary" href="visit.html">Find us →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Three reasons to visit</h2>
+        <hr class="rule">
+        <div class="reasons">
+          <article class="reason">
+            <h3>We roast our own.</h3>
+            <p>Small batches, twice a week, in the machine you can see from the counter. If you can smell it, it was probably roasted within the last few days.</p>
+          </article>
+          <article class="reason">
+            <h3>The kitchen doesn't cut corners.</h3>
+            <p>Everything in the pastry case was made on site that morning. When the almond croissants run out, they run out.</p>
+          </article>
+          <article class="reason">
+            <h3>Stay as long as you like.</h3>
+            <p>Big tables, honest wifi, and nobody hovering to turn your seat. Laptops welcome on weekdays; humans welcome always.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <p>Hungry already? <a class="text-link" href="menu.html">See the full menu →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Fig &amp; Filter</p>
+      <p>8 Chalk Lane</p>
+      <a href="mailto:hello@figandfilter.example">hello@figandfilter.example</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>
